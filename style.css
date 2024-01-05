@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: white;
+}
+
+/* nav{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    
+} */
+nav .wrapper{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+nav .nav-container{
+    width: 100%;
+    height: 100%;
+    margin:  0 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-container img{
+    width: 60px;
+}
+
+nav .nav-container .links a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.2s linear;
+}
+
+nav .nav-container .links a:hover{
+    color: rgb(124, 123, 123);
+    
+}
+
+nav .nav-container .search {
+    width: 320px;
+    box-shadow: 1px 1px 20px white;
+    height: 5vh;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+nav .nav-container .search input{
+    width: 86%;
+    padding-left: 15px;
+    font-size: 1    rem;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;   
+}
+nav .nav-container .search i{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    width: 14%;
+    cursor: pointer;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+/* landing page */
+
+.landingpage{
+    background-image: url(images/back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingpage .content{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingpage .content .heading{
+    margin-top: -100px;
+    max-width:460px ;
+    width: 100%;
+}
+
+.landingpage .content .heading h3{
+    color: red;
+    font-size: 1.6rem;
+}   
+.landingpage .content .heading h1{
+    color: black;
+    line-height: -2rem;
+    font-size: 4.5rem;
+}
+.landingpage .content .heading p{
+    color: black;
+    font-size: 1.2rem;
+}
+.landingpage .content .heading button{
+    width: 220px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Patua One', serif;
+    transition: 0.5s linear;
+}
+
+.landingpage .content .heading button:hover{
+    scale: 1.05;
+}
+
+.landingpage .content .image img{
+    width: 800px;
+    transform: rotate(40deg);
+}
+
+
+
+/* about us */
+.aboutus{
+    box-shadow: -5px -5px 100px black ;
+    background: black;
+}
+
+.aboutus .container{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.aboutus .container .aboutus-content{
+    color: white;
+    width: 30%;
+}
+.aboutus .container  img{
+    filter: drop-shadow(0 0 10px white);
+}
+.aboutus .container .aboutus-content h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Patua One', serif;
+    color: rgb(156, 46, 6);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.aboutus .container .aboutus-content p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+/* Food Details */
+
+.details-foods{
+    background-color: black;
+}
+
+.details-foods .title{
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.details-foods .foods .card{
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-foods .foods:hover .card{
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover){
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+.details-foods .foods .card img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-foods .foods .card .discription{
+    color: white;
+    margin:0 10px;
+}
+.details-foods .foods .card .discription h1{
+    
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-foods .foods .card .discription p{
+    float: left;
+    margin-left: 2px;
+}
+.details-foods .foods .card .discription .price{
+    float: right;
+    font-family: 'Lemon', serif;
+    margin:10px 20px 10px 0;
+}
+
+
+/* download section */
+
+.download{
+    background-color: black;
+}
+
+.download .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.download .container .image img{
+    width: 300px;
+    pointer-events: none;
+    margin-left: 40px;
+}
+
+.download .container .content{
+    color: white;
+    width: 40%;
+}
+.download .container .content h1{
+    font-size: 5rem;
+}
+.download .container .content p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.download .container .content .icons{
+    width: 70%;
+    display: flex;
+    margin: 40px 20px;
+    justify-content: space-around;
+}
+.download .container .content .icons img{
+    width: 40%;
+    cursor: pointer;
+}
+
